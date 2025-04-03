@@ -30,12 +30,10 @@ export const LanguageIcon: React.FC = () => (
 
 export const PlusIcon: React.FC = () => (
   <svg
-    width="42"
-    height="42"
     viewBox="0 0 42 42"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="plus-icon"
+    className="plus-icon w-5 h-5 md:w-9 md:h-9"
   >
     <circle cx="21" cy="21" r="21" fill="#1D4ED8" />
     <path

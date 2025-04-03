@@ -63,7 +63,7 @@ export const CreateServiceForm: React.FC = () => {
         />
       </div>
 
-      <div className="flex items-center gap-3 mt-10 mr-8 mb-[-91px] w-[209px] max-w-full font-inter text-sm font-medium">
+      <div className="flex justify-end  items-center gap-3 mt-10 mr-8 mb-[-91px] w-[209px] max-w-full font-inter text-sm font-medium">
         <button
           type="button"
           onClick={handleCancel}
