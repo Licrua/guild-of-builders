@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { Badge } from './Badge';
-import { EditIcon, DeleteIcon } from './Icons';
-import DeletePopUp from './DeletePopUp';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Badge } from "./Badge";
+import { EditIcon, DeleteIcon } from "./Icons";
+import DeletePopUp from "./DeletePopUp";
 
 interface ServiceCardProps {
   name: string;
@@ -11,6 +12,7 @@ interface ServiceCardProps {
 }
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({
+  id = "1", // Temporary default value
   name,
   price,
   isInactive,
@@ -50,6 +52,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           <button
             className="hover:opacity-80 transition-opacity"
             aria-label="Edit service"
+            onClick={() => navigate(`/user/dashboard/editService/${id}`)}
           >
             <EditIcon />
           </button>

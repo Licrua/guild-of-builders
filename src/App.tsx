@@ -1,15 +1,15 @@
-import { DashboardLayout } from './components/services/DashboardLayout';
-import Home from './components/startingPage/Home';
-import NotFound from './components/services/notFound';
-import './globals.css';
+import { DashboardLayout } from "./components/services/DashboardLayout";
+import Home from "./components/startingPage/Home";
+import NotFound from "./components/services/notFound";
+import "./globals.css";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useNavigate,
-} from 'react-router-dom';
-import { Layout } from './components/general/Layout';
-import { CreateService } from './components/services/CreateService';
+} from "react-router-dom";
+import { Layout } from "./components/general/Layout";
+import { CreateService } from "./components/services/CreateService";
 
 export default function App() {
   return (
@@ -22,6 +22,10 @@ export default function App() {
           <Route
             path="/user/dashboard/createService"
             element={<CreateService />}
+          />
+          <Route
+            path="/user/dashboard/editService/:id"
+            element={<EditService />}
           />
         </Routes>
       </Layout>
