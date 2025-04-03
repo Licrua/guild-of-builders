@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const LanguageIcon: React.FC = () => (
   <svg
@@ -16,7 +16,7 @@ export const LanguageIcon: React.FC = () => (
     <text
       fill="#4B5563"
       xmlSpace="preserve"
-      style={{ whiteSpace: "pre" }}
+      style={{ whiteSpace: 'pre' }}
       fontFamily="Nunito"
       fontSize="14"
       letterSpacing="0em"
@@ -55,7 +55,7 @@ export const EditIcon: React.FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="edit-icon"
-    style={{ cursor: "pointer" }}
+    style={{ cursor: 'pointer' }}
   >
     <path
       d="M14.2689 3.58579C15.0892 2.80475 16.4192 2.80475 17.2395 3.58579C18.0598 4.36684 18.0598 5.63317 17.2395 6.41422L16.4067 7.20711L13.4361 4.37869L14.2689 3.58579Z"
@@ -76,7 +76,7 @@ export const DeleteIcon: React.FC = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="delete-icon"
-    style={{ cursor: "pointer" }}
+    style={{ cursor: 'pointer' }}
   >
     <path
       d="M19.9612 7L19.0502 19.1425C18.9717 20.1891 18.057 21 16.955 21H8.2634C7.16136 21 6.2467 20.1891 6.16818 19.1425L5.25725 7M10.5086 11V17M14.7098 11V17M15.76 7V4C15.76 3.44772 15.2898 3 14.7098 3H10.5086C9.92859 3 9.45837 3.44772 9.45837 4V7M4.20697 7H21.0114"
